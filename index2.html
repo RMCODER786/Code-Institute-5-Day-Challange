@@ -1,0 +1,54 @@
+<!--Display different Alert Message on different Button Click Event.-->
+<html>
+	<head>
+		<title>Display different Alert Message on different Button Click Event.</title>
+        <script type="text/javascript">
+        
+        function buttonClick()
+   {
+
+    document.getElementById("heading2")
+    .innerHTML="Tellso";
+       //alert("Button clicked");
+   }
+
+
+
+
+			function showMessage(btnId){			
+				if(btnId=="btnShowMsg1")
+                document.getElementById("btnShowMsg1")
+                  .innerHTML="Whats";
+                
+				else if(btnId=="btnShowMsg2")
+                document.getElementById("btnShowMsg2")
+                  .innerHTML="My";
+
+                else if(btnId=="btnShowMsg3")
+				document.getElementById("btnShowMsg3")
+				  .innerHTML="Name";
+				  
+               
+					//alert("You clicked on Button 3.");
+				//else	
+					//alert("Invalid Button Id.");				
+			}
+
+		</script>
+	</head>
+<body>
+	<center>
+		<h1>Display different Alert Message on different Button Click Event.</h1>
+        <b>Click on button to display message: </b><br><br>
+        <h2 id="btnShowMsg1">Click me</h2>  
+        <h2 id="btnShowMsg2">Click me</h2>  
+        <h2 id="btnShowMsg3">Click me</h2>  
+		<input type="button" id="btnShowMsg1" value="Button 1" onClick='showMessage(this.id)'/>
+		<input type="button" id="btnShowMsg2" value="Button 2" onClick='showMessage(this.id)'/>
+		<input type="button" id="btnShowMsg3" value="Button 3" onClick='showMessage(this.id)'/>
+	</center>
+</body>
+
+</html>
+
+</html>
